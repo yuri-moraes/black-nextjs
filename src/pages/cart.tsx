@@ -1,5 +1,3 @@
-// pages/cart.tsx
-
 import { NextPage } from "next";
 import Head from "next/head";
 

@@ -1,5 +1,3 @@
-// pages/products.tsx
-
 import { NextPage } from "next";
 import Head from "next/head";
 

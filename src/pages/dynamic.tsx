@@ -7,9 +7,9 @@ type ApiResponse = {
   timestamp: Date;
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  console.log("API URL:", process.env.NEXT_PUBLIC_APIURL); // Para verificar se a variável está definida
+console.log(process.env.NEXT_PUBLIC_APIURL);
 
+export const getServerSideProps: GetServerSideProps = async () => {
   const serverSideData: ApiResponse = await fetch(
     `${process.env.NEXT_PUBLIC_APIURL}/api/hello`
   ).then((res) => res.json());
@@ -35,7 +35,6 @@ const Dynamic: NextPage = (props: {
     const data = await fetch("/api/hello").then((res) => res.json());
     setClientSideData(data);
   };
-
   return (
     <Container tag="main">
       <h1 className="my-5">Como funcionam as renderizações do Next.js</h1>
