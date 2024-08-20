@@ -8,6 +8,7 @@ export type ProductType = {
 };
 
 export const fetchProducts = async () => {
+  console.log("API URL:", process.env.NEXT_PUBLIC_APIURL);
   const products: ProductType[] = await fetch(
     `${process.env.NEXT_PUBLIC_APIURL}/api/products`
   ).then((res) => res.json());
