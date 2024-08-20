@@ -21,10 +21,10 @@ const Home: NextPage = () => {
             O melhor jeito de comprar o que você ama
           </h1>
           <p className="my-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            iusto voluptatem obcaecati omnis error architecto neque cum
-            exercitationem fugiat. Vero illo autem eum nisi sapiente, odio optio
-            accusamus cupiditate ad.
+            Uma loja feita com Next.js, TypeScript, Bootstrap e Reactstrap com
+            carinho. Abordando todos os conceitos mais importantes do framework.
+            <br />
+            Meu contato: yuri.nogueira.de.moraes@hotmail.com
           </p>
           <Link href="/products">
             <Button color="dark" className="px-4 pb-2">
